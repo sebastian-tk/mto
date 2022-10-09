@@ -43,26 +43,28 @@ int my_printf(char *format_string, char *param)
 		{
 			i += 2;
 			int number = 0;
+			int start = i;
 			while (format_string[i] >= '0' && format_string[i] <= '9' &&  i < strlen(format_string))
 			{
-					number  = (number*10) + (int)format_string[i];
+					number  = (number*10)+((int)format_string[i]-'0');
+
 				i++;
 			}
 
-			if (i < strlen(format_string) && format_string[i] == 'k')
+			swapLetters(param);
+			if (format_string[i] == 'k')
 			{
-				swapLetters(param);
+
 				if (number < strlen(param))
 				{
 					for (int i = 0; i < number; i++){
-						printf("%s", param[i]);						
+						printf("%c", param[i]);						
 					}	
 				}else
 				printf("%s", param);
+			}else{
+				printf("%s", param);
 			}
-
-			swapLetters(param);
-			printf("%s", param);
 		}
 
 		else
