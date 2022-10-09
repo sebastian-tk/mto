@@ -1,9 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
-#include <stdlib.h>
-
-
 
 void swapLetters(char *param)
 {
@@ -19,11 +15,10 @@ void swapLetters(char *param)
 		}
 	}
 }
-
 int convertToNumber(const char *str)
 {
 	int numb;
-	for (int i = 0; isFinishChars(str, i); i++)
+	for (int i = 0;i < strlen(str); i++)
 	{
 		if (i == 0)
 		{
@@ -34,31 +29,9 @@ int convertToNumber(const char *str)
 	return numb;
 }
 
-char *cutoff(const char *str, int from, int to)
-{
-	if (from >= to)
-		return NULL;
-
-	char *cut = calloc(sizeof(char), (to - from) + 1);
-	char *begin = cut;
-	if (!cut)
-		return NULL;
-
-	const char *fromit = str + from;
-	const char *toit = str + to;
-	(void)toit;
-	memcpy(cut, fromit, to);
-	return begin;
-}
-
-bool isFinishChars(char *format_string, int idx)
-{
-	return idx < strlen(format_string);
-}
-
 int my_printf(char *format_string, char *param)
 {
-	for (int i = 0; isFinishChars(format_string, i); i++)
+	for (int i = 0; i < strlen(format_string); i++)
 	{
 		if ((format_string[i] == '#') && (format_string[i + 1] == 'k'))
 		{
@@ -69,26 +42,22 @@ int my_printf(char *format_string, char *param)
 		else if ((format_string[i] == '#') && (format_string[i + 1] == '.'))
 		{
 			i += 2;
-			int number;
-			int start = i + 1;
-			int finish = -1;
-			while (format_string[i] >= '0' && format_string[i] <= '9' && isFinishChars(format_string, i))
+			int number = 0;
+			while (format_string[i] >= '0' && format_string[i] <= '9' &&  i < strlen(format_string))
 			{
-				if (isFinishChars(format_string, i))
-				{
-					finish = i;
-				}
+					number  = (number*10) + (int)format_string[i];
 				i++;
 			}
 
-			if (finish != -1 && format_string[i] == 'k')
+			if (i < strlen(format_string) && format_string[i] == 'k')
 			{
-				int val = convertToNumber(cutoff(format_string, start, finish));
-				if (val < strlen(param))
-				{
-					param = cutoff(param, 0, val);
-				}
 				swapLetters(param);
+				if (number < strlen(param))
+				{
+					for (int i = 0; i < number; i++){
+						printf("%s", param[i]);						
+					}	
+				}else
 				printf("%s", param);
 			}
 
@@ -102,6 +71,7 @@ int my_printf(char *format_string, char *param)
 	puts("");
 	return 0;
 }
+
 
 int main(int argc, char *argv[])
 {
