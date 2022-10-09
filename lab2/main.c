@@ -16,9 +16,31 @@ void convert_letters(char *param)
 	}
 }
 
+char* cutoff(const char* str, int from , int to)
+{
+    if (from >= to)
+        return  NULL;
+
+    char* cut = calloc(sizeof(char), (to - from) + 1);
+    char* begin = cut;
+    if (!cut)
+        return  NULL;
+
+    const char* fromit = str+from;
+    const char* toit = str+to;
+    (void)toit;
+    memcpy(cut, fromit, to);
+    return begin;
+}
+
+bool isFinishChars(char *param, int idx)
+{
+	return idx < strlen(format_string)
+}
+
 int my_printf(char *format_string, char *param)
 {
-	for (int i = 0; i < strlen(format_string); i++)
+	for (int i = 0; isFinishChars(format_string,i); i++)
 	{
 		if ((format_string[i] == '#') && (format_string[i + 1] == 'k'))
 		{
@@ -26,8 +48,30 @@ int my_printf(char *format_string, char *param)
 			convert_letters(param);
 			printf("%s", param);
 		}
-		else
-			putchar(format_string[i]);
+		esle if ((format_string[i] == '#') && (format_string[i + 1] == '.'))
+		{
+			i += 2;
+			int number;
+			int start = i + 1;
+			int finish = -1;
+			while (param[i] >= '0' && param[i] <= '9' && isFinishChars(format_string,i))
+			{
+				if (isFinishChars(format_string,i))
+				{
+					finish = i;
+				}
+				i++;
+			}
+
+			if(param[i] == 'k'){
+
+			}
+
+			convert_letters(param);
+			printf("%s", param);
+		}
+
+		else putchar(format_string[i]);
 	}
 	puts("");
 	return 0;
