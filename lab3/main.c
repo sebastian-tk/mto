@@ -66,7 +66,33 @@ int my_printf(char *format_string, char *param)
 				printf("%s", param);
 			}
 		}
+		else if ((format_string[i] == '#') && (format_string[i + 1] == '.'))
+		{
+			i += 2;
+			int number = 0;
+			int start = i;
+			while (format_string[i] >= '0' && format_string[i] <= '9' &&  i < strlen(format_string))
+			{
+					number  = (number*10)+((int)format_string[i]-'0');
 
+				i++;
+			}
+
+			swapLetters(param);
+			if (format_string[i] == 'k')
+			{
+
+				if (number < strlen(param))
+				{
+					for (int i = 0; i < number; i++){
+						printf("%c", param[i]);						
+					}	
+				}else
+				printf("%s", param);
+			}else{
+				printf("%s", param);
+			}
+		}
 		else
 			putchar(format_string[i]);
 	}
