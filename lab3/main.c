@@ -29,6 +29,16 @@ int convertToNumber(const char *str)
 	return numb;
 }
 
+char* addSpaces(char* str, int amount)
+{
+	char spaces[amount]={' '}
+	char dest[strlen(str)+amount];
+
+	strcpy( dest, spaces);
+	strcat( dest, str);
+	return dest;
+}
+
 int my_printf(char *format_string, char *param)
 {
 	for (int i = 0; i < strlen(format_string); i++)
@@ -87,8 +97,11 @@ int my_printf(char *format_string, char *param)
 					for (int i = 0; i < number; i++){
 						printf("%c", param[i]);						
 					}	
-				}else
+				}else{
+
 				printf("%s", param);
+
+				}
 			}else{
 				printf("%s", param);
 			}
