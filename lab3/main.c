@@ -80,7 +80,7 @@ int my_printf(char *format_string, char *param)
 		}
 		else if ((format_string[i] == '#') && (format_string[i+1] >= '0' && format_string[i+1] <= '9'))
 		{
-			i += 2;
+			i += 1;
 			int number = 0;
 			int start = i;
 			while (format_string[i] >= '0' && format_string[i] <= '9' &&  i < strlen(format_string))
@@ -89,7 +89,6 @@ int my_printf(char *format_string, char *param)
 
 				i++;
 			}
-
 			swapLetters(param);
 			if (format_string[i] == 'k')
 			{
@@ -98,7 +97,8 @@ int my_printf(char *format_string, char *param)
 				{
 					for (int i = 0; i < number; i++){
 						printf("%c", param[i]);						
-					}
+					}							
+
 				}	
 				else if (number > strlen(param))
 				{
