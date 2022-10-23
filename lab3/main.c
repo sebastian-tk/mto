@@ -29,14 +29,19 @@ int convertToNumber(const char *str)
 	return numb;
 }
 
-char* addSpaces(char* str, int amount)
+char* concatStrings(char* str, char* str2)
 {
-	char spaces[amount]={' '}
-	char dest[strlen(str)+amount];
-
-	strcpy( dest, spaces);
-	strcat( dest, str);
+	char * dest = (char *) malloc(1 + strlen(str)+ strlen(str2) );
+	strcpy(dest, str);
+	strcat(dest, str2);
 	return dest;
+}
+
+char* createEmptyString(int amount)
+{
+	char * str = (char *) malloc(1 + amount);
+	str={' '}
+	return str;
 }
 
 int my_printf(char *format_string, char *param)
@@ -96,13 +101,12 @@ int my_printf(char *format_string, char *param)
 				{
 					for (int i = 0; i < number; i++){
 						printf("%c", param[i]);						
-					}	
+					}
+				}	
 				else if (number > strlen(param))
 				{
 					int different = number - strlen(param);
 					printf("%s", addSpaces(param, different));							
-	
-				}
 				}else {
 					printf("%s", param);
 				}
