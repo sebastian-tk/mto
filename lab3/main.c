@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 void swapLetters(char *param)
 {
@@ -37,12 +39,7 @@ char* concatStrings(char* str, char* str2)
 	return dest;
 }
 
-char* createEmptyString(int amount)
-{
-	char * str = (char *) malloc(1 + amount);
-	str={' '}
-	return str;
-}
+
 
 int my_printf(char *format_string, char *param)
 {
@@ -106,7 +103,10 @@ int my_printf(char *format_string, char *param)
 				else if (number > strlen(param))
 				{
 					int different = number - strlen(param);
-					printf("%s", addSpaces(param, different));							
+					for (int i = 0; i < different; i++){
+						printf("%c", ' ');						
+					}
+					printf("%s", param);							
 				}else {
 					printf("%s", param);
 				}
