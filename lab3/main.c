@@ -66,7 +66,7 @@ int my_printf(char *format_string, char *param)
 				printf("%s", param);
 			}
 		}
-		else if ((format_string[i] == '#') && (format_string[i + 1] == '.'))
+		else if ((format_string[i] == '#') && (format_string[i+1] >= '0' && format_string[i+1] <= '9'))
 		{
 			i += 2;
 			int number = 0;
