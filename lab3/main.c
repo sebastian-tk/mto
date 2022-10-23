@@ -31,16 +31,6 @@ int convertToNumber(const char *str)
 	return numb;
 }
 
-char* concatStrings(char* str, char* str2)
-{
-	char * dest = (char *) malloc(1 + strlen(str)+ strlen(str2) );
-	strcpy(dest, str);
-	strcat(dest, str2);
-	return dest;
-}
-
-
-
 int my_printf(char *format_string, char *param)
 {
 	for (int i = 0; i < strlen(format_string); i++)
