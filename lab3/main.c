@@ -97,10 +97,14 @@ int my_printf(char *format_string, char *param)
 					for (int i = 0; i < number; i++){
 						printf("%c", param[i]);						
 					}	
-				}else{
-
-				printf("%s", param);
-
+				else if (number > strlen(param))
+				{
+					int different = number - strlen(param);
+					printf("%s", addSpaces(param, different));							
+	
+				}
+				}else {
+					printf("%s", param);
 				}
 			}else{
 				printf("%s", param);
