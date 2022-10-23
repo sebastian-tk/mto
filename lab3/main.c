@@ -92,13 +92,14 @@ int my_printf(char *format_string, char *param)
 			swapLetters(param);
 			if (format_string[i] == 'k')
 			{
-
-				if (number < strlen(param))
+				if(number == 0){
+					continue;
+				}
+				else if (number < strlen(param))
 				{
 					for (int i = 0; i < number; i++){
 						printf("%c", param[i]);						
 					}							
-
 				}	
 				else if (number > strlen(param))
 				{

@@ -14,3 +14,6 @@ abcd TEST1 xxx
 abcd tEs xxx
 abcd tEs xxx
 ala    tEsToWy16 xxx
+ala ma kota t
+|          test18 nowego zadania z metod
+podaje zero[] znakow 

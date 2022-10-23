@@ -30,4 +30,9 @@ abcd #3k xxx
 TeStOwY15
 ala #12k xxx
 TeStOwY16
-
+ala ma kota #1k
+TEST17
+|#16k nowego zadania z metod
+TEST18
+podaje zero[#0k] znakow 
+TEST19
