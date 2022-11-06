@@ -12,9 +12,9 @@ class lab0 {
 
 	public static boolean isIntegerString(String number){
 		for(int i=0; i<number.length();i++){
-			if(!isNumeric(number.charAt(i))){
+			if(!isNumeric(number.charAt(i)))
 				return false;
-			}
+			
 		}
 		return true;
 	}
