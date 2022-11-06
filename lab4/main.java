@@ -7,7 +7,7 @@ class lab0 {
 	}
 
 	public static int convert(String number){
-		return Integer.parseInt(number)
+		return Integer.parseInt(number);
 	}
 
 	public static boolean isIntegerString(String number){
@@ -26,10 +26,11 @@ class lab0 {
 				i++;
 			}else if(format_string.charAt(i) == '#' && (format_string.charAt(i+1) == 'g'))
 			{
+				i++;
 				if(isIntegerString(param)){
 					System.out.print(param);					
-				}
-				System.out.print("0");			
+				}else
+					System.out.print("0");		
 			}else{
 				System.out.print(format_string.charAt(i));
 			}
