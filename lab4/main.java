@@ -2,17 +2,41 @@
 import java.io.*;
 
 class lab0 {
+	public static boolean isNumeric(char sign){
+		return sign >= '0' && sign <='9';
+	}
+
+	public static int convert(String number){
+		return Integer.parseInt(number)
+	}
+
+	public static boolean isIntegerString(String number){
+		for(int i=0; i<number.length();i++){
+			if(!isNumeric(number.charAt(i))){
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public static void my_printf(String format_string, String param){
 		for(int i=0;i<format_string.length();i++){
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'k')){
 				System.out.print(param);
 				i++;
+			}else if(format_string.charAt(i) == '#' && (format_string.charAt(i+1) == 'g'))
+			{
+				boolean isCorrect=false;
+				
+			
+
 			}else{
 				System.out.print(format_string.charAt(i));
 			}
 		}
 		System.out.println("");
 	}
+
 	public static void main(String[] args) throws IOException {
 		//System.out.println("Hello, World!"); 
 		BufferedReader bufferReader=new BufferedReader(new InputStreamReader(System.in));
