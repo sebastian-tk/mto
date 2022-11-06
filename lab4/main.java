@@ -26,10 +26,10 @@ class lab0 {
 				i++;
 			}else if(format_string.charAt(i) == '#' && (format_string.charAt(i+1) == 'g'))
 			{
-				boolean isCorrect=false;
-				
-			
-
+				if(isIntegerString(param)){
+					System.out.print(param);					
+				}
+				System.out.print("0");			
 			}else{
 				System.out.print(format_string.charAt(i));
 			}
