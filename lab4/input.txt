@@ -22,3 +22,7 @@ test dla #g cyfry
 123
 test dla nie #g cyfry
 123a
+test wyswietla bez # g zmian
+z12
+test wyswietla bez #1g zmian
+123
