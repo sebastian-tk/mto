@@ -12,3 +12,5 @@ test dla 123 cyfry
 test dla nie 0 cyfry
 test wyswietla bez # g zmian
 test wyswietla bez #1g zmian
+test wyswietla blad 0 liczba ujemna
+test wyswietla bez g# zmian string

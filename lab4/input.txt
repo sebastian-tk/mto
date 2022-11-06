@@ -26,3 +26,7 @@ test wyswietla bez # g zmian
 z12
 test wyswietla bez #1g zmian
 123
+test wyswietla blad #g liczba ujemna
+-1
+test wyswietla bez g# zmian string
+-1
