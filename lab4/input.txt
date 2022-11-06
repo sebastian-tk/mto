@@ -32,3 +32,5 @@ test wyswietla bez g# zmian string
 -1
 test wyswietla cyfry #g
 010
+test wyswietla cyfry #g
+1234

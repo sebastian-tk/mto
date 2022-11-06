@@ -15,3 +15,4 @@ test wyswietla bez #1g zmian
 test wyswietla blad 0 liczba ujemna
 test wyswietla bez g# zmian string
 test wyswietla cyfry 010
+test wyswietla cyfry 4321
