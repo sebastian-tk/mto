@@ -30,3 +30,5 @@ test wyswietla blad #g liczba ujemna
 -1
 test wyswietla bez g# zmian string
 -1
+test wyswietla cyfry #g
+010

@@ -6,8 +6,12 @@ class lab0 {
 		return sign >= '0' && sign <='9';
 	}
 
-	public static int convert(String number){
-		return Integer.parseInt(number);
+	public static String reverserStr(String number){
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(number);
+		stringBuilder.reverse();
+		return stringBuilder.toString();
+		
 	}
 
 	public static boolean isIntegerString(String number){
@@ -28,7 +32,7 @@ class lab0 {
 			{
 				i++;
 				if(isIntegerString(param)){
-					System.out.print(param);					
+					System.out.print(reverserStr(param));					
 				}else
 					System.out.print("0");		
 			}else{

@@ -8,9 +8,10 @@ fjdslkfjdl test7 tttttt
 fjdlsjfkl test8 oooolll
 rwrewrew test9 fjdslkjfdl
 fjdlskjfldjflj test10 rewrewrew
-test dla 123 cyfry
+test dla 321 cyfry
 test dla nie 0 cyfry
 test wyswietla bez # g zmian
 test wyswietla bez #1g zmian
 test wyswietla blad 0 liczba ujemna
 test wyswietla bez g# zmian string
+test wyswietla cyfry 010
