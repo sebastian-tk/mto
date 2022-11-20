@@ -15,5 +15,4 @@ test wyswietla blad 0 liczba ujemna
 test wyswietla bez g# zmian string
 test wyswietla cyfry 010
 test wyswietla cyfry 4321
-test wyswietla ograniczenie cyfry 48
-
+test wyswietla ograniczenie cyfry 012
