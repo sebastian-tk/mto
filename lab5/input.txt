@@ -36,3 +36,5 @@ test wyswietla ograniczenie cyfry #3g
 1234
 test wyswietla cyfry i wypelnia reszte #07g
 1234
+test wyswietla cyfry i wypelnia reszte spacjami #7g
+1234

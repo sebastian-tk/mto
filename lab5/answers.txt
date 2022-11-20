@@ -17,3 +17,4 @@ test wyswietla cyfry 010
 test wyswietla cyfry 4321
 test wyswietla ograniczenie cyfry 012
 test wyswietla cyfry i wypelnia reszte 0000123
+test wyswietla cyfry i wypelnia reszte spacjami    0123
