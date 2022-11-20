@@ -14,6 +14,21 @@ class lab0 {
 		
 	}
 
+    public static int findCharPositionIfDigits(String expression, int start, char limitSign){
+        int idx = start;
+        for(int i = start; i<expression.length();i++){
+            if(isCharNumeric(expression.charAt(i))){
+                idx++;
+            }else if(expression.charAt(i) == limitSign){
+                return idx;
+            }
+            else {
+                return -1;
+            }
+        }
+        return idx;
+    }
+
 	public static boolean isIntegerString(String number){
 		for(int i=0; i<number.length();i++){
 			if(!isNumeric(number.charAt(i)))
