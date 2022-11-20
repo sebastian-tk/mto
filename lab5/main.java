@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 
 class lab0 {
-	   public static boolean isCharNumeric(char sign){
+	  public static boolean isCharNumeric(char sign){
         return Character.isDigit(sign);
     }
 
@@ -27,7 +27,7 @@ class lab0 {
         if(expressionLength ==length){
             return expression;
         }else if(expressionLength > length){
-            return expression.substring(0,length-1);
+            return expression.substring(0,length);
         }else{
             int missingLength = expressionLength - length;
             return createStringWithFillSign(missingLength, fillZero ? '0' : ' ') +
@@ -55,7 +55,7 @@ class lab0 {
     public static String decreaseValue(String number){
         StringBuilder stringBuilder = new StringBuilder();
         for(var sign : number.toCharArray()){
-            stringBuilder.append(sign == '9' ? '0' : (char)(sign-1));
+            stringBuilder.append(sign == '9' ? '0' : (char) (sign-1));
         }
         return stringBuilder.toString();
     }
@@ -97,7 +97,7 @@ class lab0 {
                     fillZero = isZero(format_string.charAt(i));
                     value = convertStringToInt(format_string.substring(i,stop));
                     String changedParam = fillOrCropExpression(decreaseValue(param),value, fillZero);
-                    System.out.println(changedParam);
+                    System.out.print(changedParam);
                     i = stop;
                 }else {
                     System.out.print(format_string.charAt(i));
