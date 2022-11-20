@@ -29,7 +29,7 @@ class lab0 {
         }else if(expressionLength > length){
             return expression.substring(0,length);
         }else{
-            int missingLength = expressionLength - length;
+            int missingLength = length - expressionLength;
             return createStringWithFillSign(missingLength, fillZero ? '0' : ' ') +
                     expression;
         }
