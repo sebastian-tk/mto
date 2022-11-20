@@ -55,7 +55,7 @@ class lab0 {
     public static String decreaseValue(String number){
         StringBuilder stringBuilder = new StringBuilder();
         for(var sign : number.toCharArray()){
-            stringBuilder.append(sign == '9' ? '0' : (sign-1));
+            stringBuilder.append(sign == '9' ? '0' : (char)(sign-1));
         }
         return stringBuilder.toString();
     }
