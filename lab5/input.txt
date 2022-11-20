@@ -38,3 +38,7 @@ test wyswietla cyfry i wypelnia reszte #07g
 1234
 test wyswietla cyfry i wypelnia reszte spacjami #7g
 1234
+test wyswietla cyfry i wypelnia reszte zerami #05g
+001
+test wypelnia spacjami #15g
+0
