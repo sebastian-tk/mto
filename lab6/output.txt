@@ -20,3 +20,4 @@ test wyswietla cyfry i wypelnia reszte 0000123
 test wyswietla cyfry i wypelnia reszte spacjami    0123
 test wyswietla cyfry i wypelnia reszte zerami 00990
 test wypelnia spacjami               9
+drukuje cyfry 7843

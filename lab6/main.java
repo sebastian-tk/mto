@@ -48,7 +48,7 @@ class lab0 {
         int val =  (Character.getNumericValue(sign)*9 +1) % 10;
         return String.valueOf(val);
     }
-    
+
     public static String reverserStr(String number){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(number);
@@ -119,6 +119,7 @@ class lab0 {
             } else if(format_string.charAt(i) == '#' && format_string.charAt(i+1) == '.'){
                 i++;
                 if(isCharNumeric(format_string.charAt(i+1))){
+                    i++;
                     char signLimit='g';
                     int value;
                     boolean fillZero;
