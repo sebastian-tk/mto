@@ -102,13 +102,31 @@ class lab0 {
                 }else {
                     System.out.print(format_string.charAt(i));
                 }
-            } else{
+            } else if(format_string.charAt(i) == '#' && format_string.charAt(i+1) == '.'){
+                i++;
+                if(isCharNumeric(format_string.charAt(i+1))){
+                    char signLimit='g';
+                    int value;
+                    boolean fillZero;
+                    int stop = findCharPositionIfDigits(format_string,i,signLimit);
+                    if(stop!=-1){
+                        fillZero = isZero(format_string.charAt(i));
+                        value = convertStringToInt(format_string.substring(i,stop));
+                        String changedParam = fillOrCropExpression(decreaseValue(param),value, fillZero);
+                        System.out.print(changedParam);
+                        i = stop;
+                    }else {
+                        System.out.print(format_string.charAt(i));
+                    }
+                } else {
+                    System.out.print(format_string.charAt(i));
+                }
+            }else{
                 System.out.print(format_string.charAt(i));
             }
         }
         System.out.println("");
     }
-
 	public static void main(String[] args) throws IOException {
 		//System.out.println("Hello, World!"); 
 		BufferedReader bufferReader=new BufferedReader(new InputStreamReader(System.in));
