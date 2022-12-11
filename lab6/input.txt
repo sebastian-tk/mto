@@ -44,3 +44,5 @@ test wypelnia spacjami #15g
 0
 drukuje cyfry #.4g
 4378
+nie drukuje cyfry tylko string .4g
+99
