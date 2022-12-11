@@ -43,9 +43,12 @@ class lab0 {
         return stringBuilder.toString();
     }
 
-    public static char calculateDigit(char sign){
-        return 0;
+    
+    public static String calculateDigit(char sign){
+        int val =  (Character.getNumericValue(sign)*9 +1) % 10;
+        return String.valueOf(val);
     }
+    
     public static String reverserStr(String number){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(number);
