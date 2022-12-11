@@ -42,3 +42,5 @@ test wyswietla cyfry i wypelnia reszte zerami #05g
 001
 test wypelnia spacjami #15g
 0
+drukuje cyfry #.4g
+4378
