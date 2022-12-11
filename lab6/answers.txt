@@ -24,3 +24,4 @@ drukuje cyfry 7843
 nie drukuje cyfry tylko string .4g
 drukuje cyfry i wypelnia zerami 00007843
 drukuje cyfry i wypelnia zerami i zamienia 0 na 9 00997843
+ucina zbyt dlugi ciag znako 78
