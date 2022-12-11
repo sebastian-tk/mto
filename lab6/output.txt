@@ -22,3 +22,4 @@ test wyswietla cyfry i wypelnia reszte zerami 00990
 test wypelnia spacjami               9
 drukuje cyfry 7843
 nie drukuje cyfry tylko string .4g
+drukuje cyfry i wypelnia zerami 00007843

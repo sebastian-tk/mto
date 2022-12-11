@@ -122,12 +122,10 @@ class lab0 {
                     i++;
                     char signLimit='g';
                     int value;
-                    boolean fillZero;
                     int stop = findCharPositionIfDigits(format_string,i,signLimit);
                     if(stop!=-1){
-                        fillZero = isZero(format_string.charAt(i));
                         value = convertStringToInt(format_string.substring(i,stop));
-                        String changedParam = fillOrCropExpression(convertDigitsOfValue(param),value, fillZero);
+                        String changedParam = fillOrCropExpression(convertDigitsOfValue(param),value, true);
                         System.out.print(changedParam);
                         i = stop;
                     }else {
