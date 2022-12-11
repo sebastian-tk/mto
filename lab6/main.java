@@ -35,6 +35,17 @@ class lab0 {
         }
     }
 
+   public static String convertDigitsOfValue(String number){
+        StringBuilder stringBuilder = new StringBuilder();
+        for(var sign : number.toCharArray()){
+            stringBuilder.append(sign == '0' ? '9' : calculateDigit(sign));
+        }
+        return stringBuilder.toString();
+    }
+
+    public static char calculateDigit(char sign){
+        return 0;
+    }
     public static String reverserStr(String number){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(number);
@@ -112,7 +123,7 @@ class lab0 {
                     if(stop!=-1){
                         fillZero = isZero(format_string.charAt(i));
                         value = convertStringToInt(format_string.substring(i,stop));
-                        String changedParam = fillOrCropExpression(decreaseValue(param),value, fillZero);
+                        String changedParam = fillOrCropExpression(convertDigitsOfValue(param),value, fillZero);
                         System.out.print(changedParam);
                         i = stop;
                     }else {
