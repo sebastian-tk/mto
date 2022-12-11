@@ -48,3 +48,5 @@ nie drukuje cyfry tylko string .4g
 99
 drukuje cyfry i wypelnia zerami #.8g
 4378
+drukuje cyfry i wypelnia zerami i zamienia 0 na 9 #.8g
+004378
