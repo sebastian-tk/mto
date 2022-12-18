@@ -1,6 +1,6 @@
-test convert 10 for g from a: ag
-test convert 11 for h from b: bh
-test convert 12 for i from c: ci
-test convert 13 for j from d: dj
-test convert 14 for k from e: ek
-test convert 15 for l from f: fl
+test convert 10 for g from a: g
+test convert 11 for h from b: h
+test convert 12 for i from c: i
+test convert 13 for j from d: j
+test convert 14 for k from e: k
+test convert 15 for l from f: l

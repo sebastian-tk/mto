@@ -13,7 +13,7 @@ class Main {
     }
 
     public static String swapLetter(String expression) {
-        StringBuilder stringBuilder = new StringBuilder(expression);
+        StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < expression.length() ; i++) {
             stringBuilder.append(mapChar(expression.charAt(i)));
         }
