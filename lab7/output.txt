@@ -1,27 +1,6 @@
-totafsdfsf test fdsfsdf
-totafsdtest2 fdsfsdf fdfjs
-jfldjfldk # wynik
-fjdfsfds # k alal
-djfjkldsjf test5 jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds test6 jdlkfjdslf
-fjdslkfjdl test7 tttttt
-fjdlsjfkl test8 oooolll
-rwrewrew test9 fjdslkjfdl
-fjdlskjfldjflj test10 rewrewrew
-test dla 321 cyfry
-test dla nie 0 cyfry
-test wyswietla bez # g zmian
-test wyswietla blad 0 liczba ujemna
-test wyswietla bez g# zmian string
-test wyswietla cyfry 010
-test wyswietla cyfry 4321
-test wyswietla ograniczenie cyfry 012
-test wyswietla cyfry i wypelnia reszte 0000123
-test wyswietla cyfry i wypelnia reszte spacjami    0123
-test wyswietla cyfry i wypelnia reszte zerami 00990
-test wypelnia spacjami               9
-drukuje cyfry 7843
-nie drukuje cyfry tylko string .4g
-drukuje cyfry i wypelnia zerami 00007843
-drukuje cyfry i wypelnia zerami i zamienia 0 na 9 00997843
-ucina zbyt dlugi ciag znako 78
+test convert 10 for g from a: ag
+test convert 11 for h from b: bh
+test convert 12 for i from c: ci
+test convert 13 for j from d: dj
+test convert 14 for k from e: ek
+test convert 15 for l from f: fl
