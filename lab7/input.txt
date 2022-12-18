@@ -1,54 +1,12 @@
-totafsdfsf #k fdsfsdf
-test
-totafsd#k fdsfsdf fdfjs
-test2
-jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #k jdlkfjdslf
-test6
-fjdslkfjdl #k tttttt
-test7
-fjdlsjfkl #k oooolll
-test8
-rwrewrew #k fjdslkjfdl
-test9
-fjdlskjfldjflj #k rewrewrew
-test10
-test dla #g cyfry
-123
-test dla nie #g cyfry
-123a
-test wyswietla bez # g zmian
-z12
-test wyswietla blad #g liczba ujemna
--1
-test wyswietla bez g# zmian string
--1
-test wyswietla cyfry #g
-010
-test wyswietla cyfry #g
-1234
-test wyswietla ograniczenie cyfry #3g
-1234
-test wyswietla cyfry i wypelnia reszte #07g
-1234
-test wyswietla cyfry i wypelnia reszte spacjami #7g
-1234
-test wyswietla cyfry i wypelnia reszte zerami #05g
-001
-test wypelnia spacjami #15g
-0
-drukuje cyfry #.4g
-4378
-nie drukuje cyfry tylko string .4g
-99
-drukuje cyfry i wypelnia zerami #.8g
-4378
-drukuje cyfry i wypelnia zerami i zamienia 0 na 9 #.8g
-004378
-ucina zbyt dlugi ciag znako #.2g
-4378
+test convert 10 for g from a: #j
+10
+test convert 11 for h from b: #j
+11
+test convert 12 for i from c: #j
+12
+test convert 13 for j from d: #j
+13
+test convert 14 for k from e: #j
+14
+test convert 15 for l from f: #j
+15
