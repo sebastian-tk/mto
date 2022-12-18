@@ -20,3 +20,5 @@ test shouldn't convert, when [# j] incorrect schema
 23
 test shouldn't convert, when [j] incorrect schema
 11
+test shouldn't convert, when missing sign
+11
