@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 class Main {
 
-    public static int convertStringToInt(String exp){
-        return Integer.parseInt(exp);
+    public static long convertStringToLong(String exp){
+        return Long.parseLong(exp);
     }
 
-    public static String convertIntToHex(int val) {
-        return Integer.toHexString(val);
+    public static String convertLongToHex(long val) {
+        return Long.toHexString(val);
     }
 
     public static String swapLetter(String expression) {
@@ -37,8 +37,8 @@ class Main {
         for(int i=0;i<format_string.length();i++){
             if(format_string.charAt(i) == '#' && format_string.charAt(i+1) == 'j'){
                 i++;
-                int number = convertStringToInt(param);
-                String hexValue = swapLetter(convertIntToHex(number));
+                long number = convertStringToLong(param);
+                String hexValue = swapLetter(convertLongToHex(number));
                 System.out.print(hexValue);
             }else{
                 System.out.print(format_string.charAt(i));

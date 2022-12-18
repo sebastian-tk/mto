@@ -12,3 +12,5 @@ test convert 15 for l from f: #j
 15
 test convert 154 value, returned [#j] and should be 9g
 154
+test convert 85145876935 value, returned [#j] and should be 13j316l9i7 after mapping
+85145876935
