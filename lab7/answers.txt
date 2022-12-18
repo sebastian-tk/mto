@@ -7,3 +7,5 @@ test convert 15 for l from f: l
 test convert 154 value, returned [9g] and should be 9g
 test convert 85145876935 value, returned [13j316l9i7] and should be 13j316l9i7 after mapping
 test convert 5278 value, returned [ij62] and should be ij62 after mapping
+test shouldn't convert, when [# j] incorrect schema
+test shouldn't convert, when [j] incorrect schema
