@@ -9,3 +9,4 @@ test convert 85145876935 value, returned [13j316l9i7] and should be 13j316l9i7 a
 test convert 5278 value, returned [ij62] and should be ij62 after mapping
 test shouldn't convert, when [# j] incorrect schema
 test shouldn't convert, when [j] incorrect schema
+test shouldn't convert, when missing sign
