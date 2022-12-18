@@ -10,3 +10,5 @@ test convert 14 for k from e: #j
 14
 test convert 15 for l from f: #j
 15
+test convert 154 value, returned [#j] and should be 9g
+154

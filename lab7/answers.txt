@@ -4,3 +4,4 @@ test convert 12 for i from c: i
 test convert 13 for j from d: j
 test convert 14 for k from e: k
 test convert 15 for l from f: l
+test convert 154 value, returned [9g] and should be 9g
