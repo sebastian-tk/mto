@@ -40,7 +40,9 @@ class Main {
                 long number = convertStringToLong(param);
                 String hexValue = swapLetter(convertLongToHex(number));
                 System.out.print(hexValue);
+            
             }else{
+
                 System.out.print(format_string.charAt(i));
             }
         }
