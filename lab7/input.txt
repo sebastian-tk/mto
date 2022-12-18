@@ -16,7 +16,4 @@ test convert 85145876935 value, returned [#j] and should be 13j316l9i7 after map
 85145876935
 test convert 5278 value, returned [#j] and should be ij62 after mapping
 52578
-test shouldn't convert, when [# j] incorrect schema
-23
-test shouldn't convert, when [j] incorrect schema
-11
+
