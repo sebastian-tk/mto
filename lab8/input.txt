@@ -1,0 +1,24 @@
+test convert 10 for g from a: #j
+10
+test convert 11 for h from b: #j
+11
+test convert 12 for i from c: #j
+12
+test convert 13 for j from d: #j
+13
+test convert 14 for k from e: #j
+14
+test convert 15 for l from f: #j
+15
+test convert 154 value, returned [#j] and should be 9g
+154
+test convert 85145876935 value, returned [#j] and should be 13j316l9i7 after mapping
+85145876935
+test convert 5278 value, returned [#j] and should be ij62 after mapping
+52578
+test shouldn't convert, when [# j] incorrect schema
+23
+test shouldn't convert, when [j] incorrect schema
+11
+test shouldn't convert, when missing sign
+11
